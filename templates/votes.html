@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+  <ul>
+  {% for object in votes %}
+  <li>
+    {{ object }}
+  </li>
+  {% endfor %}
+  </ul>
+{% endblock %}

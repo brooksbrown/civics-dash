@@ -1,0 +1,19 @@
+      <h1>{{ vote.bill.short_title }}</h1>
+      <h2>{{ vote.bill.official_title }}</h2>
+      <p>
+        {{ vote.vote_breakdown.total.Yea }} Yea
+        {% for yea in vote.yea_thumbs %}
+          {{ yea }}
+        {% endfor %}
+      </p>
+      <p>
+        {{ vote.vote_breakdown.total.Nay }} Nay
+        {% for nay in vote.nay_thumbs %}
+          {{ nay }}
+        {% endfor %}
+ 
+      </p>
+      <p>{{ vote.question }}</p>
+      <pre>{{ vote.result }}</pre> 
+      <img src="{{ vote.sponsor.sponsor_pic }}"/>
+
