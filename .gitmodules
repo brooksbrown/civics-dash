@@ -1,3 +1,0 @@
-[submodule "libs/src/RTC"]
-	path = libs/src/RTC
-	url = https://github.com/pythonclt/RTC-Python-Wrapper.git
