@@ -1,1 +1,3 @@
 .vagrant
+.pyc
+keys.py
