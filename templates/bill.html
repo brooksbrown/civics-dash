@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h1>{{ bill.title_without_number }}</h1>
+<table>
+  <tr>
+    <td>Sponsor</td>
+    <td>
+      <img src="static/images/congressimages/40x50/{{ bill.sponsor.bioguideid }}.jpg">
+      {{ bill.sponsor.name }} 
+    </td>
+  </tr>
+  <tr>
+    <td>Status</td>
+    <td>{{ bill.current_status_description }}</td>
+  </tr>
+</table>
+<h4>Votes</h4>
+<ul>
+  {% for vote in votes %}
+  <li>
+    <li>
+    <p>Question: {{ vote.question }}</p>
+    <p>Result: {{ vote.result }}</p>
+    </li>
+  {% endfor %}
+</ul>
+
+
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
